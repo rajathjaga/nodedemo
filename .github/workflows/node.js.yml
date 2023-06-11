@@ -26,6 +26,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend/package-lock.json'
     - run: npm i
+      working-directory: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend/package-lock.json'
     - run: npm ci
     - run: run build --if-present
     - run: pm2 restart app.js
