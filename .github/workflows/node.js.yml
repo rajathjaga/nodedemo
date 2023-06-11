@@ -24,7 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: /home/ubuntu/actions-runner/_work/_actions/actions/checkout/v3/package-lock.jsonpackage-lock.json
+        cache-dependency-path: /home/ubuntu/actions-runner/_work/_actions/actions/checkout/v3/package-lock.json
     - run: npm ci
     - run: run build --if-present
     - run: pm2 restart app.js
