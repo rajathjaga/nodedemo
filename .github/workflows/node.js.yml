@@ -28,5 +28,6 @@ jobs:
     - run: npm i
       working-directory: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend'
     - run: npm ci
+      working-directory: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend'
     - run: run build --if-present
     - run: pm2 restart app.js
