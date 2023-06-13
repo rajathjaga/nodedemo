@@ -9,9 +9,7 @@ on:
 
 jobs:
   build:
-
     runs-on: self-hosted
-
     steps:
     - run: npm i
       working-directory: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend'
