@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - run: pwd
+    - uses: actions/checkout@v3
     - run: npm i
       working-directory: '/home/ubuntu/actions-runner/_work/nodedemo/nodedemo/backend'
     - run: npm ci
